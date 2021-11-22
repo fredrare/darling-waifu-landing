@@ -1,77 +1,23 @@
 import React, { useState, useEffect } from "react";
-import fedoraBody from "../../assets/img/waifus/fedora.png";
-import anjaBody from "../../assets/img/waifus/anja.png";
-import aryaBody from "../../assets/img/waifus/arya.png";
-import kaguyaBody from "../../assets/img/waifus/kaguya.png";
-import mashaBody from "../../assets/img/waifus/masha.png";
-import nikitaBody from "../../assets/img/waifus/nikita.png";
-import trishnaBody from "../../assets/img/waifus/trishna.png";
-import umekoBody from "../../assets/img/waifus/umeko.png";
-import fedoraHead from "../../assets/img/waifus/fedora.png";
-import anjaHead from "../../assets/img/waifus/anja.png";
-import aryaHead from "../../assets/img/waifus/arya.png";
-import kaguyaHead from "../../assets/img/waifus/kaguya.png";
-import mashaHead from "../../assets/img/waifus/masha.png";
-import nikitaHead from "../../assets/img/waifus/nikita.png";
-import trishnaHead from "../../assets/img/waifus/trishna.png";
-import umekoHead from "../../assets/img/waifus/umeko.png";
 import Hexagon from "../elements/hexagon";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const WaifuLayout = () => {
+const WaifuLayout = ({ waifus }) => {
+  console.log(waifus);
   const [waifu, setWaifu] = useState({
-    body: fedoraBody,
-    face: fedoraHead,
-    name: "fedora",
+    body: waifus[0]?.node?.body?.img,
+    name: waifus[0]?.node?.name,
   });
 
   useEffect(() => {
-    const waifus = {
-      fedora: {
-        body: fedoraBody,
-        face: fedoraHead,
-        name: "fedora",
-      },
-      anja: {
-        body: anjaBody,
-        face: anjaHead,
-        name: "anja",
-      },
-      arya: {
-        body: aryaBody,
-        face: aryaHead,
-        name: "arya",
-      },
-      kaguya: {
-        body: kaguyaBody,
-        face: kaguyaHead,
-        name: "kaguya",
-      },
-      masha: {
-        body: mashaBody,
-        face: mashaHead,
-        name: "masha",
-      },
-      nikita: {
-        body: nikitaBody,
-        face: nikitaHead,
-        name: "nikita",
-      },
-      trishna: {
-        body: trishnaBody,
-        face: trishnaHead,
-        name: "trishna",
-      },
-      umeko: {
-        body: umekoBody,
-        face: umekoHead,
-        name: "umeko",
-      },
-    };
-    const keyWaifus = Object.keys(waifus);
-    let i = 1;
+    let i = 0;
 
     setInterval(() => {
-      setWaifu(waifus[keyWaifus[i++ % keyWaifus.length]]);
+      i++;
+      setWaifu({
+        body: waifus[i % waifus.length].node.body.img,
+        name: waifus[i % waifus.length].node.name,
+      });
     }, 2000);
   }, []);
 
@@ -86,13 +32,15 @@ const WaifuLayout = () => {
           />
         </div>
         <div className="absolute w-full top-0 left-0">
-          <div className="flex flex-center items-center">
-            <img
-              className="mx-auto w-full lg:w-4/5 animate-float"
-              src={waifu.body}
-              alt={waifu.name}
-            />
-          </div>
+          <GatsbyImage
+            className="w-full flex flex-center items-center w-2/5 overflow-visible"
+            imgClassName="mx-auto w-full lg:w-2/5 animate-float"
+            style={{
+              width: "100%",
+            }}
+            alt={waifu.name}
+            image={waifu.body}
+          />
         </div>
       </div>
     </div>

@@ -1,23 +1,19 @@
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Particles from "react-tsparticles";
-import background from "../../assets/img/background.png";
 import heart1 from "../../assets/img/heart1.png";
 import heart2 from "../../assets/img/heart2.png";
 import heart3 from "../../assets/img/heart3.png";
 import heart4 from "../../assets/img/heart4.png";
 import heart5 from "../../assets/img/heart5.png";
 
-const Background = () => {
+const Background = ({ background }) => {
   const backStyle = {
     zIndex: -1,
   };
   return (
     <div className="w-full h-screen fixed" style={backStyle}>
-      <img
-        alt="fondo"
-        src={background}
-        className="w-full h-screen object-cover fixed overflow-hidden"
-      />
+      <GatsbyImage image={background} imgClassName="w-full h-screen object-cover fixed overflow-hidden" className="w-full h-screen" alt="fondo"/>
       <Particles
         className="w-full h-screen fixed overflow-hidden filter -hue-rotate-15"
         params={{
@@ -39,11 +35,11 @@ const Background = () => {
                 nb_sides: 3,
               },
               image: [
-                {src: heart1},
-                {src: heart2},
-                {src: heart3},
-                {src: heart4},
-                {src: heart5},
+                { src: heart1 },
+                { src: heart2 },
+                { src: heart3 },
+                { src: heart4 },
+                { src: heart5 },
               ],
             },
             opacity: {
