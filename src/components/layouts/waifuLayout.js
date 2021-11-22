@@ -3,7 +3,6 @@ import Hexagon from "../elements/hexagon";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const WaifuLayout = ({ waifus }) => {
-  console.log(waifus);
   const [waifu, setWaifu] = useState({
     body: waifus[0]?.node?.body?.img,
     name: waifus[0]?.node?.name,

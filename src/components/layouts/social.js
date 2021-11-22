@@ -38,7 +38,7 @@ const Social = () => {
         </div>
       </a>
       {/* OpenSea Small */}
-      <div className="md:invisible filter drop-shadow-md hover:drop-shadow-lg">
+      <div className="visible md:invisible filter drop-shadow-md hover:drop-shadow-lg">
         <Hexagon
           size="16"
           classNames="bg-almostwhite shadow-md hover:shadow-lg hover:bg-white"
