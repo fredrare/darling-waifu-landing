@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.014" height="72.438" viewBox="0 0 65.014 72.438">
+  <defs>
+    <filter id="Trazado_103" x="0" y="0" width="65.014" height="72.438" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_56" data-name="Grupo 56" transform="translate(-1307.487 -737.281)">
+    <g transform="matrix(1, 0, 0, 1, 1307.49, 737.28)" filter="url(#Trazado_103)">
+      <path id="Trazado_103-2" data-name="Trazado 103" d="M1654.667,1526.523,1670.338,1500h31.343v54.438h-31.343Z" transform="translate(-1645.67 -1494)" fill="#a9eefc"/>
+    </g>
+    <g id="Arrow_-_Down_2" data-name="Arrow - Down 2" transform="matrix(-0.035, -0.999, 0.999, -0.035, 1337.831, 779.394)">
+      <path id="Arrow_-_Down_2-2" data-name="Arrow - Down 2" d="M6.492.492c-.077.075-.408.36-.68.625A28.919,28.919,0,0,0,.447,8.844,6.155,6.155,0,0,0,0,10.416,2.577,2.577,0,0,0,.291,11.61,2.5,2.5,0,0,0,1.5,12.67a13.121,13.121,0,0,0,1.419.342,31.972,31.972,0,0,0,5.075.322,36.966,36.966,0,0,0,4.919-.284,11.326,11.326,0,0,0,1.769-.455A2.38,2.38,0,0,0,16,10.491v-.075a6.5,6.5,0,0,0-.545-1.761A28.92,28.92,0,0,0,10.167,1.1,7.546,7.546,0,0,0,9.428.455,2.378,2.378,0,0,0,8.009,0,2.5,2.5,0,0,0,6.492.492" transform="translate(0 0)" fill="#484a59"/>
+    </g>
+  </g>
+</svg>

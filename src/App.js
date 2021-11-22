@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Background from "./components/elements/background";
+import CTA from "./components/layouts/callToAction";
+import Container from "./components/layouts/container";
+import ContractLinks from "./components/layouts/contractLinks";
+import Footer from "./components/layouts/footer";
+import Social from "./components/layouts/social";
+import WaifuLayout from "./components/layouts/waifuLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full min-h-full h-screen table text-bordergray items-center">
+      <div className="table-row-group">
+        <div className="table-row">
+          <Background />
+          <ContractLinks />
+          <Container>
+            <WaifuLayout />
+            <CTA />
+            <Social />
+          </Container>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }

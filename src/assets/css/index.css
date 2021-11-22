@@ -1,0 +1,16 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hexagon {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 6.699%, 75% 6.699%, 100% 50%, 75% 93.301%, 25% 93.301%, 0% 50%);
+  -webkit-clip-path: polygon(25% 6.699%, 75% 6.699%, 100% 50%, 75% 93.301%, 25% 93.301%, 0% 50%);
+  -moz-clip-path: polygon(25% 6.699%, 75% 6.699%, 100% 50%, 75% 93.301%, 25% 93.301%, 0% 50%);
+}
+
+.bright-text {
+  text-shadow: 1px 1px 0px #ffffff;
+}
