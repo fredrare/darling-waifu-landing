@@ -12,6 +12,7 @@
 /build
 .env
 .cache
+.public
 
 # misc
 .DS_Store

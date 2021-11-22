@@ -9,7 +9,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "autoprefixer": "^9",
+    "autoprefixer": "^10.4.0",
     "dotenv": "^10.0.0",
     "gatsby": "next",
     "gatsby-core-utils": "next",
@@ -19,12 +19,12 @@
     "gatsby-plugin-typography": "next",
     "gatsby-source-contentful": "next",
     "gatsby-transformer-remark": "next",
-    "postcss": "^7",
+    "postcss": "^8.3.11",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-tsparticles": "^1.37.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "tailwindcss": "^2.2.19",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
