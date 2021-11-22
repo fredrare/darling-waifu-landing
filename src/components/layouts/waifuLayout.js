@@ -33,10 +33,11 @@ const WaifuLayout = ({ waifus }) => {
         </div>
         <div className="absolute w-full top-0 left-0">
           <GatsbyImage
-            className="w-full flex flex-center items-center w-2/5 overflow-visible"
+            className="w-full flex flex-center items-center lg:w-2/5 overflow-visible"
             imgClassName="mx-auto w-full lg:w-2/5 animate-float"
             style={{
               width: "100%",
+              overflow: "visible",
             }}
             alt={waifu.name}
             image={waifu.body}
