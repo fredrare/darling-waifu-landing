@@ -18,3 +18,11 @@
 .pb-full {
   padding-bottom: 100%;
 }
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
