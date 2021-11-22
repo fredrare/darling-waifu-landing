@@ -3,13 +3,14 @@ import Button from "../elements/button";
 import lock from "../../assets/vector/lock.svg";
 import paper from "../../assets/vector/paper.svg";
 import isologo from "../../assets/vector/isologo.svg";
+import paperdoc from "../../assets/docs/paper.pdf";
 
 const CTA = () => {
   // TODO: Add links
   const coming = "Soon!";
   const strings = {
-    paper: ["Private sale", coming],
-    sale: ["Litepaper", coming],
+    sale: ["Private sale", coming],
+    paper: ["Litepaper", coming],
   };
   const [index, setIndex] = useState(0);
 
@@ -32,10 +33,10 @@ const CTA = () => {
         Play to business NFT
       </div>
       <div className="w-full -px-4 flex flex-row space-x-4 content-center items-center justify-center">
-        <Button>
+        <Button link={paperdoc}>
           <div className="flex flex-row">
-            <img src={paper} alt="Litepaper" className="mr-4" />
-            <div>{strings.paper[index]}</div>
+            <img src={paper} alt="Litepaper" className="mr-4"/>
+            <div>{strings.paper[0]}</div>
           </div>
         </Button>
         <Button>
