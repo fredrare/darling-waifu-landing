@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Hexagon from "../elements/hexagon";
 import opensea from "../../assets/vector/opensea.svg";
 import facebook from "../../assets/vector/facebook.svg";
@@ -11,16 +11,19 @@ const Social = () => {
     {
       classNames:
         "visible md:invisible filter drop-shadow-md hover:drop-shadow-lg",
+      name: "opensea",
       link: "https://opensea.io/DarlingWaifu",
       element: <img alt="OpenSea" src={opensea} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
+      name: "telegram",
       link: "https://t.me/DarilingWaifuNFT",
       element: <img alt="Telegram" src={telegram} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
+      name: "discord",
       link: "https://discord.gg/xRNfa4825n",
       element: (
         <svg
@@ -39,11 +42,13 @@ const Social = () => {
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
+      name: "twitter",
       link: "https://twitter.com/DarlingWaifuNFT",
       element: <img alt="Twitter" src={twitter} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
+      name: "instagram",
       link: "https://www.instagram.com/darlingwaifunft/",
       element: (
         <svg
@@ -75,10 +80,15 @@ const Social = () => {
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
+      name: "facebook",
       link: "https://www.facebook.com/groups/darlingwaifu",
       element: <img alt="Facebook" src={facebook} />,
     },
   ];
+
+  const [isClient, SetIsClient] = useState(false)
+
+  useEffect(() => SetIsClient(true), [])
 
   // TODO: Add links
   return (
@@ -87,7 +97,7 @@ const Social = () => {
       <BigOpenSea />
       {/* Other Social Media */}
       {socials.map((social) => (
-        <div className={social.classNames}>
+        <div className={social.classNames} key={social.name + (isClient ? '-client' : '-server')}>
           <Hexagon
             size="16"
             classNames="bg-almostwhite shadow-md hover:shadow-lg hover:bg-white"
