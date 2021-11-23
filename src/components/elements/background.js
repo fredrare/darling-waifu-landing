@@ -12,18 +12,18 @@ const Background = ({ background }) => {
     zIndex: -2,
   };
   return (
-    <div className="relative w-full h-0" style={backStyle}>
+    <div className="fixed top-0 left-0 w-full h-0" style={backStyle}>
       <GatsbyImage
         image={background}
-        imgClassName="w-full h-screen object-cover overflow-hidden"
-        className="w-full h-screen fixed top-0 left-0"
+        imgClassName="w-full h-screen fixed object-cover overflow-hidden"
+        className="w-full h-screen fixed top-0 left-0 right-0 bottom-0"
         style={{
           zIndex: -1
         }}
         alt="fondo"
       />
       <Particles
-        className="w-full h-screen absolute top-0 left-0 overflow-hidden filter -hue-rotate-15"
+        className="w-full h-screen fixed top-0 left-0 overflow-hidden filter -hue-rotate-15"
         params={{
           particles: {
             number: {
