@@ -28,10 +28,10 @@ module.exports = {
       },
       spacing: {
         third: "30%",
-        action: "50%",
+        action: "40%",
         mdfooter: "90%",
         full: "100%",
-        fuller: "130%",
+        fuller: "135%",
       },
       keyframes: {
         float: {

@@ -21,7 +21,7 @@ const CTA = () => {
   }, [index]);
 
   return (
-    <div className="absolute lg:relative top-0 left-0 w-full lg:w-1/2 flex flex-col items-center mx-auto my-auto h-full pt-36 md:pt-32 lg:pt-32 md:px-8 lg:px-6">
+    <div className="absolute lg:relative top-0 left-0 w-full lg:w-1/2 flex flex-col items-center mx-auto my-auto h-full pt-third md:pt-32 lg:pt-32 md:px-8 lg:px-6">
       <div className="w-full md:w-3/4 px-20 md:px-0 lg:w-full flex flex-center content-center">
         <img
           className="lg:transform lg:scale-110"
