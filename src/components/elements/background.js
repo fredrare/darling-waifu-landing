@@ -9,13 +9,21 @@ import heart5 from "../../assets/img/heart5.png";
 
 const Background = ({ background }) => {
   const backStyle = {
-    zIndex: -1,
+    zIndex: -2,
   };
   return (
-    <div className="w-full h-screen fixed" style={backStyle}>
-      <GatsbyImage image={background} imgClassName="w-full h-screen object-cover fixed overflow-hidden" className="w-full h-screen" alt="fondo"/>
+    <div className="relative w-full h-0" style={backStyle}>
+      <GatsbyImage
+        image={background}
+        imgClassName="w-full h-screen object-cover overflow-hidden"
+        className="w-full h-screen fixed top-0 left-0"
+        style={{
+          zIndex: -1
+        }}
+        alt="fondo"
+      />
       <Particles
-        className="w-full h-screen fixed overflow-hidden filter -hue-rotate-15"
+        className="w-full h-screen absolute top-0 left-0 overflow-hidden filter -hue-rotate-15"
         params={{
           particles: {
             number: {

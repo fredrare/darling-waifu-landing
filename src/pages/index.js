@@ -8,6 +8,7 @@ import ContractLinks from "../components/layouts/contractLinks";
 import Footer from "../components/layouts/footer";
 import Social from "../components/layouts/social";
 import WaifuLayout from "../components/layouts/waifuLayout";
+import favicon from "../assets/vector/isologo.svg";
 import { Helmet } from "react-helmet";
 
 const Index = ({
@@ -20,6 +21,7 @@ const Index = ({
     <div className="w-full min-h-full h-screen table text-bordergray items-center">
       <Helmet defer={false}>
         <title>Darling Waifu</title>
+        <meta name="icon" href={favicon} />
         <meta name="description" content="Darling Waifu - NFT Game" />
       </Helmet>
       <div className="table-row-group">
