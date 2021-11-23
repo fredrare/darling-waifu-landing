@@ -12,13 +12,6 @@ const CTA = () => {
     sale: ["Private sale", coming],
     paper: ["Litepaper", coming],
   };
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIndex(1 - index);
-    }, 2000);
-  }, [index]);
 
   return (
     <div className="absolute lg:relative top-0 left-0 w-full lg:w-1/2 flex flex-col items-center mx-auto my-auto h-full pt-third md:pt-32 lg:pt-32 md:px-8 lg:px-6">
@@ -39,10 +32,10 @@ const CTA = () => {
             <div>{strings.paper[0]}</div>
           </div>
         </Button>
-        <Button>
+        <Button link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform">
           <div className="flex flex-row">
             <img src={lock} alt="Private sale" className="mr-4" />
-            <div>{strings.sale[index]}</div>
+            <div>{strings.sale[0]}</div>
           </div>
         </Button>
       </div>
