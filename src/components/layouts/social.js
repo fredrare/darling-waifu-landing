@@ -96,7 +96,7 @@ const Social = () => {
       {/* OpenSea */}
       <BigOpenSea />
       {/* Other Social Media */}
-      {socials.map((social) => (
+      {isClient && socials.map((social) => (
         <div className={social.classNames} key={social.name + (isClient ? '-client' : '-server')}>
           <Hexagon
             size="16"

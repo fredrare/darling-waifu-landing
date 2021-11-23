@@ -17,8 +17,8 @@ const WaifuLayout = ({ waifus }) => {
         body: waifus[i % waifus.length].node.body.img,
         name: waifus[i % waifus.length].node.name,
       });
-    }, 2000);
-  }, []);
+    }, 4000);
+  }, [waifus]);
 
   return (
     <div className="w-full lg:w-1/2 px-12 lg:px-0 flex flex-row justify-center">
@@ -32,7 +32,7 @@ const WaifuLayout = ({ waifus }) => {
         </div>
         <div className="absolute w-full top-0 left-0">
           <GatsbyImage
-            className="w-full flex flex-center items-center lg:w-2/5 overflow-visible"
+            className="w-full flex flex-center items-center content-center lg:w-2/5 overflow-visible"
             imgClassName="mx-auto w-full lg:w-2/5 animate-float"
             style={{
               width: "100%",

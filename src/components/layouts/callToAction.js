@@ -3,7 +3,7 @@ import Button from "../elements/button";
 import lock from "../../assets/vector/lock.svg";
 import paper from "../../assets/vector/paper.svg";
 import isologo from "../../assets/vector/isologo.svg";
-import paperdoc from "../../assets/docs/paper.pdf";
+import paperdoc from "../../assets/docs/darling-waifu-paper.pdf";
 
 const CTA = () => {
   // TODO: Add links
@@ -29,8 +29,8 @@ const CTA = () => {
           src={isologo}
         />
       </div>
-      <div className="w-full mt-third lg:mt-6 mb-8 text-center font-bold text-xl bright-text">
-        Play to business NFT
+      <div className="w-full mt-action lg:mt-6 mb-8 text-center font-bold text-xl bright-text">
+        Play to Business NFT
       </div>
       <div className="w-full -px-4 flex flex-row space-x-4 content-center items-center justify-center">
         <Button link={paperdoc}>
