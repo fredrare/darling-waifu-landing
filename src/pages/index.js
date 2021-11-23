@@ -8,19 +8,23 @@ import ContractLinks from "../components/layouts/contractLinks";
 import Footer from "../components/layouts/footer";
 import Social from "../components/layouts/social";
 import WaifuLayout from "../components/layouts/waifuLayout";
+import { Helmet } from "react-helmet";
 
-const Index = ({ data: { waifus, site: {background} } }) => {
-  // <div>
-  //   {waifus.edges.map((waifu) => {
-  //     console.log(waifu.node)
-  //     return <GatsbyImage image={waifu.node.body.img} />
-  //   })}
-  // </div>
+const Index = ({
+  data: {
+    waifus,
+    site: { background },
+  },
+}) => {
   return (
     <div className="w-full min-h-full h-screen table text-bordergray items-center">
+      <Helmet defer={false}>
+        <title>Darling Waifu</title>
+        <meta name="description" content="Darling Waifu - NFT Game" />
+      </Helmet>
       <div className="table-row-group">
         <div className="table-row">
-          <Background background={background.img}/>
+          <Background background={background.img} />
           <ContractLinks />
           <Container>
             <WaifuLayout waifus={waifus.edges} />
