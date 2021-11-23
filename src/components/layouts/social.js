@@ -86,27 +86,31 @@ const Social = () => {
     },
   ];
 
-  const [isClient, SetIsClient] = useState(false)
+  const [isClient, SetIsClient] = useState(false);
 
-  useEffect(() => SetIsClient(true), [])
+  useEffect(() => SetIsClient(true), []);
 
   // TODO: Add links
   return (
     <div className="fixed right-2 md:right-6 top-8 md:top-10 flex-row space-y-1 transform scale-90 md:scale-100">
       {/* OpenSea */}
-      <BigOpenSea />
+      {isClient && <BigOpenSea />}
       {/* Other Social Media */}
-      {isClient && socials.map((social) => (
-        <div className={social.classNames} key={social.name + (isClient ? '-client' : '-server')}>
-          <Hexagon
-            size="16"
-            classNames="bg-almostwhite shadow-md hover:shadow-lg hover:bg-white"
-            link={social.link}
+      {isClient &&
+        socials.map((social) => (
+          <div
+            className={social.classNames}
+            key={social.name + (isClient ? "-client" : "-server")}
           >
-            {social.element}
-          </Hexagon>
-        </div>
-      ))}
+            <Hexagon
+              size="16"
+              classNames="bg-almostwhite shadow-md hover:shadow-lg hover:bg-white"
+              link={social.link}
+            >
+              {social.element}
+            </Hexagon>
+          </div>
+        ))}
     </div>
   );
 };
