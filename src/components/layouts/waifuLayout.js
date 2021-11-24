@@ -33,7 +33,7 @@ const WaifuLayout = ({ waifus }) => {
         <div className="absolute w-full top-0 left-0 transform transition duration-200 lg:hover:scale-95">
           <GatsbyImage
             loading="eager"
-            className="w-full flex flex-center items-center content-center lg:w-2/5 overflow-visible animate-float"
+            className="w-full flex flex-center items-center content-center lg:w-2/5 overflow-visible"
             imgClassName="mx-auto w-full lg:w-2/5 animate-float"
             style={{
               width: "100%",
