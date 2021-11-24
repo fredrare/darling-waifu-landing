@@ -23,16 +23,17 @@ const WaifuLayout = ({ waifus }) => {
   return (
     <div className="w-full lg:w-1/2 px-12 lg:px-0 flex flex-row justify-center">
       <div className="relative w-full md:w-3/4 lg:w-full">
-        <div className="absolute top-0 left-0 w-full h-full mx-auto">
+        <div className="absolute top-14 left-0 w-full h-full mx-auto">
           <Hexagon
             size="full"
             isResponsive={true}
             classNames=" bg-almostwhite bg-opacity-80"
           />
         </div>
-        <div className="absolute w-full top-0 left-0">
+        <div className="absolute w-full top-0 left-0 transform transition duration-200 lg:hover:scale-95">
           <GatsbyImage
-            className="w-full flex flex-center items-center content-center lg:w-2/5 overflow-visible"
+            loading="eager"
+            className="w-full flex flex-center items-center content-center lg:w-2/5 overflow-visible animate-float"
             imgClassName="mx-auto w-full lg:w-2/5 animate-float"
             style={{
               width: "100%",

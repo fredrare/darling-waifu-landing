@@ -18,7 +18,7 @@ const Index = ({
   },
 }) => {
   return (
-    <div className="w-full min-h-full h-screen table text-bordergray items-center">
+    <div className="w-full min-h-full h-screen table text-bordergray items-center font-baloo">
       <Helmet defer={false}>
         <title>Darling Waifu</title>
         <meta name="icon" href={favicon} />
@@ -50,14 +50,14 @@ export const pageQuery = graphql`
           id
           name
           body {
-            img: gatsbyImageData(layout: CONSTRAINED)
+            img: gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
           }
         }
       }
     }
     site: contentfulSite {
       background {
-        img: gatsbyImageData(layout: FULL_WIDTH)
+        img: gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
       }
     }
   }

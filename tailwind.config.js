@@ -2,12 +2,15 @@ module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
     options: {
-      safelist: ['pb-full'],
+      safelist: ["pb-full"],
     },
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        baloo: ['"Baloo Bhaina 2"', "Helvetica", "Arial", "sans-serif"],
+      },
       colors: {
         primarypeach: "#F0C1DC",
         primaryskyblue: "#ABEEFC",
@@ -32,19 +35,6 @@ module.exports = {
         mdfooter: "90%",
         full: "100%",
         fuller: "135%",
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": {
-            transform: "translateY(-5%)",
-          },
-          "50%": {
-            transform: "translateY(0%)",
-          },
-        },
-      },
-      animation: {
-        float: "float 2s ease-in-out infinite",
       },
     },
   },
