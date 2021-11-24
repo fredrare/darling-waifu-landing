@@ -23,7 +23,7 @@ const WaifuLayout = ({ waifus }) => {
   return (
     <div className="w-full lg:w-1/2 px-12 lg:px-0 flex flex-row justify-center">
       <div className="relative w-full md:w-3/4 lg:w-full">
-        <div className="absolute top-14 left-0 w-full h-full mx-auto">
+        <div className="absolute top-4 lg:top-14 left-0 w-full h-full mx-auto">
           <Hexagon
             size="full"
             isResponsive={true}
