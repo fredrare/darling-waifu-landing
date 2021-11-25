@@ -10,6 +10,7 @@ import Social from "../components/layouts/social";
 import WaifuLayout from "../components/layouts/waifuLayout";
 import favicon from "../assets/vector/isologo.svg";
 import { Helmet } from "react-helmet";
+import OSTPlayer from "../components/elements/ost";
 
 const Index = ({
   data: {
@@ -31,8 +32,9 @@ const Index = ({
           <Container>
             <WaifuLayout waifus={waifus.edges} />
             <CTA />
-            <Social />
           </Container>
+          <Social />
+          <OSTPlayer />
         </div>
       </div>
       <Footer />

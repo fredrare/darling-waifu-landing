@@ -14,7 +14,6 @@ const BigOpenSea = () => {
         <Hexagon
           size="16"
           classNames="bg-almostwhite group-hover:bg-white"
-          link="https://opensea.io/DarlingWaifu"
         >
           <img alt="OpenSea" src={opensea} />
         </Hexagon>

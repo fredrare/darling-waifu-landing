@@ -81,7 +81,7 @@ const Social = () => {
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "facebook",
-      link: "https://www.facebook.com/groups/darlingwaifu",
+      link: "https://www.facebook.com/Darling-Waifu-110711884773793",
       element: <img alt="Facebook" src={facebook} />,
     },
   ];
