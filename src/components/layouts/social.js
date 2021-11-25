@@ -18,13 +18,13 @@ const Social = () => {
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "telegram",
-      link: "https://t.me/DarilingWaifuNFT",
+      link: "https://t.me/+LGSx_9Db3uI1ZTIx",
       element: <img alt="Telegram" src={telegram} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "discord",
-      link: "https://discord.gg/xRNfa4825n",
+      link: "https://discord.gg/DyKCX3wkKM",
       element: (
         <svg
           className="homeIcon-AaowEC"
