@@ -4,7 +4,7 @@ import useSound from "use-sound";
 
 const Button = ({ link, children }) => {
   const [canPlay, setCanPlay] = useState(false);
-  const [play, { stop, sound }] = useSound(buttonSounds, {
+  const [play, { stop }] = useSound(buttonSounds, {
     sprite: {
       press: [50, 100],
       release: [200, 300],

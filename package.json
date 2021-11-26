@@ -1,14 +1,11 @@
 {
   "name": "darling-waifu-landing-page",
-  "version": "0.9.1",
+  "version": "1.0",
   "private": true,
   "description": "Darling Waifu NFT landing page using Gatsby",
   "author": "Franco Ramirez (fredrare.com)",
   "license": "GPL 2",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^10.4.0",
     "dotenv": "^10.0.0",
     "gatsby": "^4.2.0",

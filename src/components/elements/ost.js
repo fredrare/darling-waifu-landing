@@ -54,7 +54,7 @@ const OSTPlayer = () => {
     <div className="fixed bottom-4 -right-4 filter drop-shadow-md hover:drop-shadow-lg transform scale-90 md:scale-100">
       <Hexagon
         size="16"
-        classNames="bg-primaryskyblue shadow-md hover:shadow-lg cursor-pointer"
+        classNames="bg-primaryskyblue cursor-pointer"
         callback={() => setHasOst(!hasOst)}
         hasSound={true}
       >

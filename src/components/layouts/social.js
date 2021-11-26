@@ -104,7 +104,7 @@ const Social = () => {
           >
             <Hexagon
               size="16"
-              classNames="bg-almostwhite shadow-md hover:shadow-lg hover:bg-white"
+              classNames="bg-almostwhite hover:bg-white"
               link={social.link}
               hasSound={true}
             >
