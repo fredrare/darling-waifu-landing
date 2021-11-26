@@ -38,22 +38,27 @@ const MuteIcon = () => {
 };
 
 const OSTPlayer = () => {
-  const [play, { pause }] = useSound(ost, { volume: 0.5 });
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [play, { pause, sound }] = useSound(ost, {
+    volume: 0.5,
+    loop: true,
+    html5: true,
+  });
+  const [hasOst, setHasOst] = useState(false);
 
   useEffect(() => {
-    if (isPlaying) play();
+    if (hasOst) play();
     else pause();
-  }, [isPlaying, play, pause]);
+  }, [hasOst, play, pause, sound]);
 
   return (
     <div className="fixed bottom-4 -right-4 filter drop-shadow-md hover:drop-shadow-lg transform scale-90 md:scale-100">
       <Hexagon
         size="16"
         classNames="bg-primaryskyblue shadow-md hover:shadow-lg cursor-pointer"
-        callback={() => setIsPlaying(!isPlaying)}
+        callback={() => setHasOst(!hasOst)}
+        hasSound={true}
       >
-        {isPlaying ? <MuteIcon /> : <ListenIcon />}
+        {hasOst ? <MuteIcon /> : <ListenIcon />}
       </Hexagon>
     </div>
   );

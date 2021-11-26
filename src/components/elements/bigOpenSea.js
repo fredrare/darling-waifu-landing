@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import Hexagon from "./hexagon";
 import opensea from "../../assets/vector/opensea.svg";
+import useSound from "use-sound";
+import hoverSound from "../../assets/music/hexover.mp3";
 
 const BigOpenSea = () => {
+  const [canPlay, setCanPlay] = useState(false);
+
+  const [play, { stop }] = useSound(hoverSound, {
+    volume: 1,
+    duration: 200,
+    autoUnlock: false,
+    onunlock: () => setCanPlay(true),
+  });
+
+  const soundActions = {
+    play: () => canPlay ? play() : {},
+    stop: () => canPlay ? stop() : {},
+  };
   return (
     <a
       href="https://opensea.io/DarlingWaifu"
       rel="noreferrer"
       target="_blank"
+      onMouseEnter={soundActions.play}
+      onMouseLeave={soundActions.stop}
       className="invisible md:visible group fixed -right-4 md:-right-6 top-2 flex flex-row items-center bg-almostwhite shadow-md hover:shadow-lg hover:bg-white w-40 h-hexheight"
     >
       <div className="transform -translate-x-4 filter drop-shadow-md group-hover:drop-shadow-lg">
-        <Hexagon
-          size="16"
-          classNames="bg-almostwhite group-hover:bg-white"
-        >
+        <Hexagon size="16" classNames="bg-almostwhite group-hover:bg-white">
           <img alt="OpenSea" src={opensea} />
         </Hexagon>
       </div>
