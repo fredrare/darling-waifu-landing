@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { navigate } from "gatsby";
 
 const Page404 = () => {
-  navigate("/");
+  useEffect(() => {
+    navigate("/");
+  }, []);
   return <></>;
 };
 
