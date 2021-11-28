@@ -11,19 +11,19 @@ const Social = () => {
     {
       classNames:
         "visible md:invisible filter drop-shadow-md hover:drop-shadow-lg",
-      name: "opensea",
+      name: "OpenSea",
       link: "https://opensea.io/DarlingWaifu",
       element: <img alt="OpenSea" src={opensea} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
-      name: "telegram",
+      name: "Telegram",
       link: "https://t.me/+LGSx_9Db3uI1ZTIx",
       element: <img alt="Telegram" src={telegram} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
-      name: "discord",
+      name: "Discord",
       link: "https://discord.gg/DyKCX3wkKM",
       element: (
         <svg
@@ -42,13 +42,13 @@ const Social = () => {
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
-      name: "twitter",
+      name: "Twitter",
       link: "https://twitter.com/DarlingWaifuNFT",
       element: <img alt="Twitter" src={twitter} />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
-      name: "instagram",
+      name: "Instagram",
       link: "https://www.instagram.com/darlingwaifunft/",
       element: (
         <svg
@@ -80,7 +80,7 @@ const Social = () => {
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
-      name: "facebook",
+      name: "Facebook",
       link: "https://www.facebook.com/Darling-Waifu-110711884773793",
       element: <img alt="Facebook" src={facebook} />,
     },
@@ -106,6 +106,7 @@ const Social = () => {
               size="16"
               classNames="bg-almostwhite hover:bg-white"
               link={social.link}
+              title={social.name}
               hasSound={true}
             >
               {social.element}

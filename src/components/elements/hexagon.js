@@ -10,6 +10,7 @@ const Hexagon = ({
   link,
   callback,
   hasSound,
+  title
 }) => {
   const [canPlay, setCanPlay] = useState(false);
   const [play, { stop }] = useSound(hoverSound, {
@@ -31,6 +32,7 @@ const Hexagon = ({
           href={link || "#"}
           rel="noreferrer"
           target={link ? "_blank" : ""}
+          title={title}
           onMouseEnter={soundActions.play}
           onMouseLeave={soundActions.stop}
           className={`absolute top-0 left-0 hexagon overflow-hidden w-full h-full flex flex-center content-center ${classNames}`}

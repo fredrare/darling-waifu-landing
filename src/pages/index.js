@@ -21,6 +21,7 @@ const Index = ({
   return (
     <div className="w-full min-h-full h-screen table text-bordergray items-center font-baloo">
       <Helmet defer={false}>
+        <html lang="en" amp />
         <title>Darling Waifu</title>
         <meta name="icon" href={favicon} />
         <meta name="description" content="Darling Waifu - NFT Game" />

@@ -1,11 +1,11 @@
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import Particles from "react-tsparticles";
-import heart1 from "../../assets/img/heart1.png";
-import heart2 from "../../assets/img/heart2.png";
-import heart3 from "../../assets/img/heart3.png";
-import heart4 from "../../assets/img/heart4.png";
-import heart5 from "../../assets/img/heart5.png";
+import heart1 from "../../assets/img/heart1.webp";
+import heart2 from "../../assets/img/heart2.webp";
+import heart3 from "../../assets/img/heart3.webp";
+import heart4 from "../../assets/img/heart4.webp";
+import heart5 from "../../assets/img/heart5.webp";
 
 const Background = ({ background }) => {
   const backStyle = {

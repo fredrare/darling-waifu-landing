@@ -23,6 +23,7 @@ const BigOpenSea = () => {
       href="https://opensea.io/DarlingWaifu"
       rel="noreferrer"
       target="_blank"
+      title="OpenSea"
       onMouseEnter={soundActions.play}
       onMouseLeave={soundActions.stop}
       className="invisible md:visible group fixed -right-4 md:-right-6 top-2 flex flex-row items-center bg-almostwhite shadow-md hover:shadow-lg hover:bg-white w-40 h-hexheight"

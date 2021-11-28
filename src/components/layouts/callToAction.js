@@ -19,13 +19,13 @@ const CTA = () => {
         Play to Business NFT
       </div>
       <div className="w-full -px-4 flex flex-row space-x-4 content-center items-center justify-center">
-        <Button link={paperdoc}>
+        <Button link={paperdoc} title="Read our litepaper">
           <div className="flex flex-row">
             <img src={paper} alt="Litepaper" className="mr-4" />
             <div>Litepaper</div>
           </div>
         </Button>
-        <Button link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform">
+        <Button link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform" title="Join our private sale">
           <div className="flex flex-row">
             <img src={lock} alt="Private sale" className="mr-4" />
             <div>Private sale</div>
