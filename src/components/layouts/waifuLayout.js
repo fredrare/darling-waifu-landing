@@ -23,7 +23,7 @@ const WaifuLayout = ({ waifus }) => {
   return (
     <div className="w-full lg:w-1/2 px-12 lg:px-0 flex flex-row justify-center">
       <div className="relative w-full md:w-3/4 lg:w-full">
-        <div className="absolute top-4 lg:top-14 left-0 w-full h-full mx-auto">
+        <div className="absolute top-4 lg:top-14 left-0 w-full h-full mx-auto filter drop-shadow-md">
           <Hexagon
             size="full"
             isResponsive={true}
@@ -33,8 +33,8 @@ const WaifuLayout = ({ waifus }) => {
         <div className="absolute w-full top-0 left-0 transform transition duration-200 lg:hover:scale-95">
           <GatsbyImage
             loading="eager"
-            className="w-full flex flex-center items-center content-center lg:w-2/5 overflow-visible"
-            imgClassName="mx-auto w-full lg:w-2/5 animate-float"
+            className="w-full flex flex-center items-center content-center lg:w-1/3 overflow-visible"
+            imgClassName="mx-auto w-4/5 lg:w-1/3 animate-float"
             style={{
               width: "100%",
               overflow: "visible",
