@@ -10,7 +10,7 @@ import terms from "../../assets/docs/terms.pdf";
 const Footer = () => {
   return (
     <div className="table-row-group">
-      <div className="table-row bg-almostwhite bg-opacity-80">
+      <div className="table-row bg-almostwhite bg-opacity-60 bgblur">
         <div className="py-4 px-8 flex flex-col">
           <div className="flex flex-row flex-wrap justify-center items-center content-center align-middle space-x-6 space-y-4 mb-8">
             {/* Netlify */}

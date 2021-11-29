@@ -15,8 +15,8 @@ const BigOpenSea = () => {
   });
 
   const soundActions = {
-    play: () => canPlay ? play() : {},
-    stop: () => canPlay ? stop() : {},
+    play: () => (canPlay ? play() : {}),
+    stop: () => (canPlay ? stop() : {}),
   };
   return (
     <a
@@ -29,7 +29,7 @@ const BigOpenSea = () => {
       className="invisible md:visible group fixed -right-4 md:-right-6 top-2 flex flex-row items-center bg-almostwhite shadow-md hover:shadow-lg hover:bg-white w-40 h-hexheight"
     >
       <div className="transform -translate-x-4 filter drop-shadow-md group-hover:drop-shadow-lg">
-        <Hexagon size="16" classNames="bg-almostwhite group-hover:bg-white">
+        <Hexagon size="16" className="bg-almostwhite group-hover:bg-white">
           <img alt="OpenSea" src={opensea} />
         </Hexagon>
       </div>

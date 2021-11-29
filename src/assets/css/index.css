@@ -64,3 +64,9 @@
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
+
+.bgblur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+}

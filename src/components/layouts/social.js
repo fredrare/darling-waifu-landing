@@ -81,7 +81,7 @@ const Social = () => {
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "Facebook",
-      link: "https://www.facebook.com/Darling-Waifu-110711884773793",
+      link: "https://www.facebook.com/darlingwaifuofficial",
       element: <img alt="Facebook" src={facebook} />,
     },
   ];
@@ -104,7 +104,7 @@ const Social = () => {
           >
             <Hexagon
               size="16"
-              classNames="bg-almostwhite hover:bg-white"
+              className="bg-almostwhite hover:bg-white"
               link={social.link}
               title={social.name}
               hasSound={true}

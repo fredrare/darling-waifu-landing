@@ -6,11 +6,11 @@ const Hexagon = ({
   children,
   size,
   style,
-  classNames,
+  className,
   link,
   callback,
   hasSound,
-  title
+  title,
 }) => {
   const [canPlay, setCanPlay] = useState(false);
   const [play, { stop }] = useSound(hoverSound, {
@@ -35,14 +35,14 @@ const Hexagon = ({
           title={title}
           onMouseEnter={soundActions.play}
           onMouseLeave={soundActions.stop}
-          className={`absolute top-0 left-0 hexagon overflow-hidden w-full h-full flex flex-center content-center ${classNames}`}
+          className={`absolute top-0 left-0 hexagon overflow-hidden w-full h-full flex flex-center content-center ${className}`}
           style={style}
         >
           <div className="m-auto">{children}</div>
         </a>
       ) : (
         <div
-          className={`absolute top-0 left-0 hexagon overflow-hidden w-full h-full flex flex-center content-center ${classNames}`}
+          className={`absolute top-0 left-0 hexagon overflow-hidden w-full h-full flex flex-center content-center ${className}`}
           style={style}
           onClick={callback}
           onMouseEnter={soundActions.play}

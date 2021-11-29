@@ -11,6 +11,7 @@ import WaifuLayout from "../components/layouts/waifuLayout";
 import favicon from "../assets/vector/isologo.svg";
 import { Helmet } from "react-helmet";
 import OSTPlayer from "../components/elements/ost";
+import preview from "../assets/img/twitterpreview.png";
 
 const Index = ({
   data: {
@@ -25,6 +26,13 @@ const Index = ({
         <title>Darling Waifu</title>
         <meta name="icon" href={favicon} />
         <meta name="description" content="Darling Waifu - NFT Game" />
+        <meta name="theme-color" content="#F0C1DC" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:title" content="Darling Waifu" />
+        <meta property="og:type" content="game" />
+        <meta property="og:url" content="https://darlingwaifu.com" />
+        <meta property="og:image" content={preview} />
+        <meta property="og:description" content="Darling Waifu - NFT Game" />
       </Helmet>
       <div className="table-row-group">
         <div className="table-row">
