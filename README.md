@@ -10,12 +10,11 @@ We have taken some protective measures with the smart contract to give the proje
 I know you are reading this file only if you are here for the source code. The Tech stack for the **landing page only** is just React. The page is hosted on the Netlify CDN to allow shockingly fast loading times for our users. This helps us distribute the load and get the page closer to our users.
 
 ### Technologies used:
-- `create-react-app`
-- Tailwind CSS
-- Particles.js
+- [Gatsby](https://www.gatsbyjs.com)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Particles.js](https://particles.js.org)
 
 ### TODO
-- Migrate to Gatsby for faster loading times
 - Change the elements of the landing page to allow you to play the game directly inside the browser (when the game gets to prod)
 
 ## About the project
