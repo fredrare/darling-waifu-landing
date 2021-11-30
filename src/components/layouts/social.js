@@ -13,13 +13,13 @@ const Social = () => {
         "visible md:invisible filter drop-shadow-md hover:drop-shadow-lg",
       name: "OpenSea",
       link: "https://opensea.io/DarlingWaifu",
-      element: <img alt="OpenSea" src={opensea} />,
+      element: <img alt="OpenSea" src={opensea} className="w-auto h-auto"  />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "Telegram",
       link: "https://t.me/+LGSx_9Db3uI1ZTIx",
-      element: <img alt="Telegram" src={telegram} />,
+      element: <img alt="Telegram" src={telegram} className="w-auto h-auto"  />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
@@ -27,7 +27,7 @@ const Social = () => {
       link: "https://discord.gg/DyKCX3wkKM",
       element: (
         <svg
-          className="homeIcon-AaowEC"
+          className="w-auto h-auto"
           aria-hidden="false"
           width="35"
           height="35"
@@ -44,7 +44,7 @@ const Social = () => {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "Twitter",
       link: "https://twitter.com/DarlingWaifuNFT",
-      element: <img alt="Twitter" src={twitter} />,
+      element: <img alt="Twitter" src={twitter} className="w-auto h-auto"  />,
     },
     {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
@@ -53,7 +53,7 @@ const Social = () => {
       element: (
         <svg
           viewBox="0 0 80 81"
-          className="a8c37x1j ms05siws hwsy1cff b7h9ocf4"
+          className="w-auto h-auto"
           fill="url(#jsc_c_7)"
           height="35"
           width="35"
@@ -82,7 +82,7 @@ const Social = () => {
       classNames: "filter drop-shadow-md hover:drop-shadow-lg",
       name: "Facebook",
       link: "https://www.facebook.com/darlingwaifuofficial",
-      element: <img alt="Facebook" src={facebook} />,
+      element: <img alt="Facebook" src={facebook} className="w-auto h-auto"  />,
     },
   ];
 

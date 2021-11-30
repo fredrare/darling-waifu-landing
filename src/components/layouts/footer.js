@@ -47,7 +47,7 @@ const Footer = () => {
               rel="noreferrer"
               title="Binance Smart Chain"
             >
-              <img alt="Binance Smart Chain" src={bsc} />
+              <img alt="Binance Smart Chain" src={bsc} className="w-auto h-auto" />
             </a>
             {/* Coin Market Cap */}
             <a
@@ -56,7 +56,7 @@ const Footer = () => {
               rel="noreferrer"
               title="Coin Market Cap"
             >
-              <img alt="Coin Market Cap" src={coinmarketcap} />
+              <img alt="Coin Market Cap" src={coinmarketcap} className="w-auto h-auto"  />
             </a>
             {/* Coin Gecko */}
             <a
@@ -65,7 +65,7 @@ const Footer = () => {
               rel="noreferrer"
               title="Coin Gecko"
             >
-              <img alt="Coin Gecko" src={coingecko} />
+              <img alt="Coin Gecko" src={coingecko} className="w-auto h-auto"  />
             </a>
             {/* PancakeSwap */}
             <a
@@ -74,11 +74,11 @@ const Footer = () => {
               rel="noreferrer"
               title="PancakeSwap"
             >
-              <img alt="PancakeSwap" src={pancakeswap} />
+              <img alt="PancakeSwap" src={pancakeswap} className="w-auto h-auto"  />
             </a>
             {/* Biswap */}
             <a href="https://biswap.org" target="_blank" rel="noreferrer" title="Biswap">
-              <img alt="Biswap" src={biswap} />
+              <img alt="Biswap" src={biswap} className="w-auto h-auto"  />
             </a>
           </div>{" "}
           <div className="flex flex-row justify-center divide-x-2 divide-bordergray space-x-8 h-6 md:h-8">
