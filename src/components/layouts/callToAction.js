@@ -19,7 +19,7 @@ const CTA = () => {
         Play to Business NFT
       </div>
       <div className="w-full -px-4 flex flex-row space-x-4 content-center items-center justify-center">
-        <Button link={paperdoc} title="Read our litepaper">
+        <Button link="https://docs.darlingwaifu.com/" title="Read our litepaper">
           <div className="flex flex-row">
             <img src={paper} alt="Litepaper" className="mr-4" />
             <div>Litepaper</div>
