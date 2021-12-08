@@ -18,14 +18,31 @@ const CTA = () => {
       <div className="w-full mt-action lg:mt-6 mb-8 text-center font-bold text-xl bright-text">
         Play to Business NFT
       </div>
-      <div className="w-full -px-4 flex flex-row space-x-4 content-center items-center justify-center">
-        <Button link="https://docs.darlingwaifu.com/" title="Read our litepaper">
-          <div className="flex flex-row">
-            <img src={paper} alt="Litepaper" className="mr-4" />
-            <div>Litepaper</div>
-          </div>
-        </Button>
-        <Button link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform" title="Join our private sale">
+      <div className="w-full flex flex-col space-y-4 content-center items-center justify-center">
+        <div className="-px-4 flex flex-row space-x-4 content-center items-center justify-center">
+          <Button
+            link={paper}
+            title="Read our litepaper"
+          >
+            <div className="flex flex-row">
+              <img src={paper} alt="Litepaper" className="mr-4" />
+              <div>Litepaper</div>
+            </div>
+          </Button>
+          <Button
+            link="https://docs.darlingwaifu.com/"
+            title="Read our litepaper"
+          >
+            <div className="flex flex-row">
+              <img src={paper} alt="Litepaper" className="mr-4" />
+              <div>Whitepaper</div>
+            </div>
+          </Button>
+        </div>
+        <Button
+          link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform"
+          title="Join our private sale"
+        >
           <div className="flex flex-row">
             <img src={lock} alt="Private sale" className="mr-4" />
             <div>Private sale</div>
