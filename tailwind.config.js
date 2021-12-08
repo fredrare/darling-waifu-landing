@@ -35,7 +35,11 @@ module.exports = {
         mdfooter: "90%",
         full: "100%",
         fuller: "135%",
+        usmfooter: "150%",
       },
+      screens: {
+        usm: "600px",
+      }
     },
   },
   variants: {
