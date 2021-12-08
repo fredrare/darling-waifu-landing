@@ -25,7 +25,7 @@ const CTA = () => {
             title="Read our litepaper"
           >
             <div className="flex flex-row">
-              <img src={paper} alt="Litepaper" className="mr-4" />
+              <img src={paperdoc} alt="Litepaper" className="mr-4" />
               <div>Litepaper</div>
             </div>
           </Button>
