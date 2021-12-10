@@ -62,7 +62,7 @@ const WaifuLayout = ({ waifus }) => {
             callback={changeWaifu}
           />
         </div>
-        <div className="absolute w-full left-0 transform transition duration-200 scale-90 lg:scale-75 lg:hover:scale-90">
+        <div className="absolute w-full left-0 -top-4 transform transition duration-200 scale-90 lg:scale-75 lg:hover:scale-90">
           <GatsbyImage
             loading="eager"
             className="w-full flex flex-center items-center content-center lg:w-1/3 overflow-visible"

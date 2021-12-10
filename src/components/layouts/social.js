@@ -92,7 +92,7 @@ const Social = () => {
 
   // TODO: Add links
   return (
-    <div className="fixed right-2 md:right-6 top-8 md:top-10 flex-row space-y-1 transform scale-90 md:scale-100">
+    <div className="fixed right-2 md:right-6 top-1 md:top-10 flex-row space-y-1 transform scale-90 md:scale-100">
       {/* OpenSea */}
       {isClient && <BigOpenSea />}
       {/* Other Social Media */}
