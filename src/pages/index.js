@@ -63,6 +63,9 @@ export const pageQuery = graphql`
           body {
             img: gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
           }
+          head {
+            img: gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          }
         }
       }
     }
