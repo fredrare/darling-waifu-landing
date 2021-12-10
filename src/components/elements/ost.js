@@ -58,7 +58,7 @@ const OSTPlayer = () => {
         callback={() => setHasOst(!hasOst)}
         hasSound={true}
       >
-        {hasOst ? <MuteIcon /> : <ListenIcon />}
+        {hasOst ? <ListenIcon /> : <MuteIcon />}
       </Hexagon>
     </div>
   );
