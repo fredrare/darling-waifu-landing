@@ -39,7 +39,7 @@ const CTA = () => {
             </div>
           </Button>
         </div>
-        <Button
+        {/* <Button
           link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform"
           title="Join our private sale"
         >
@@ -47,7 +47,7 @@ const CTA = () => {
             <img src={lock} alt="Private sale" className="mr-4" />
             <div>Private sale</div>
           </div>
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
