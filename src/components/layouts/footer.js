@@ -1,9 +1,7 @@
 import React from "react";
-import pancakeswap from "../../assets/vector/pancakeswap.svg";
 import bsc from "../../assets/vector/bsc.svg";
 import coinmarketcap from "../../assets/vector/coinmarketcap.svg";
 import coingecko from "../../assets/vector/coingecko.svg";
-import biswap from "../../assets/vector/biswap.svg";
 import privacy from "../../assets/docs/privacy.pdf";
 import terms from "../../assets/docs/terms.pdf";
 

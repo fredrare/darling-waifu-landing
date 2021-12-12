@@ -7,7 +7,7 @@ This NFT game is located on the Binance Smart Chain and lets you play with a rea
 We have taken some protective measures with the smart contract to give the project, the users and their potential income a longer lifespan. You can see the details by reading the **smart contract** and the **litepaper**. There, you can review our tokenomics, objectives and our plan to make a big and sustainable community around the blockchain world.
 
 ## About the web
-I know you are reading this file only if you are here for the source code. The Tech stack for the **landing page only** is just React. The page is hosted on the Netlify CDN to allow shockingly fast loading times for our users. This helps us distribute the load and get the page closer to our users.
+I know you are reading this file only if you are here for the source code. The Tech stack for the **landing page only** is just React. The page is hosted on the CloudFlare CDN to allow shockingly fast loading times for our users and DDoS protection, all at the same time. This helps us distribute the load and get the page closer to our users.
 
 ### Technologies used:
 - [Gatsby](https://www.gatsbyjs.com)
