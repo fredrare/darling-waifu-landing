@@ -3,7 +3,6 @@ import Button from "../elements/button";
 import lock from "../../assets/vector/lock.svg";
 import paper from "../../assets/vector/paper.svg";
 import isologo from "../../assets/vector/isologo.svg";
-import paperdoc from "../../assets/docs/darling-waifu-paper.pdf";
 
 const CTA = () => {
   return (
@@ -20,7 +19,7 @@ const CTA = () => {
       </div>
       <div className="w-full flex flex-col space-y-4 content-center items-center justify-center">
         <div className="-px-4 flex flex-row space-x-4 content-center items-center justify-center">
-          <Button
+          {/* <Button
             link={paperdoc}
             title="Read our litepaper"
           >
@@ -28,26 +27,17 @@ const CTA = () => {
               <img src={paper} alt="Litepaper" className="mr-4" />
               <div>Litepaper</div>
             </div>
-          </Button>
+          </Button> */}
           <Button
             link="https://docs.darlingwaifu.com/"
-            title="Read our litepaper"
+            title="Read our whitepaper"
           >
             <div className="flex flex-row">
-              <img src={paper} alt="Litepaper" className="mr-4" />
+              <img src={paper} alt="Whitepaper" className="mr-4" />
               <div>Whitepaper</div>
             </div>
           </Button>
         </div>
-        {/* <Button
-          link="https://docs.google.com/forms/d/e/1FAIpQLSflzR0MfmpqUBO7ti2mgIvyY0iigDsojs4dM60X1E33RzkVjQ/viewform"
-          title="Join our private sale"
-        >
-          <div className="flex flex-row">
-            <img src={lock} alt="Private sale" className="mr-4" />
-            <div>Private sale</div>
-          </div>
-        </Button> */}
       </div>
     </div>
   );
