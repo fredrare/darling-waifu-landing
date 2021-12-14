@@ -19,15 +19,15 @@ const CTA = () => {
       </div>
       <div className="w-full flex flex-col space-y-4 content-center items-center justify-center">
         <div className="-px-4 flex flex-row space-x-4 content-center items-center justify-center">
-          {/* <Button
-            link={paperdoc}
-            title="Read our litepaper"
+          <Button
+            link="https://founders.darlingwaifu.com"
+            title="Buy our passes"
           >
             <div className="flex flex-row">
-              <img src={paper} alt="Litepaper" className="mr-4" />
+              <img src={lock} alt="Founder pass" className="mr-4" />
               <div>Litepaper</div>
             </div>
-          </Button> */}
+          </Button>
           <Button
             link="https://docs.darlingwaifu.com/"
             title="Read our whitepaper"
