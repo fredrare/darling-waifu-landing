@@ -7,7 +7,7 @@ import terms from "../../assets/docs/terms.pdf";
 
 const Footer = () => {
   return (
-    <div className="table-row-group z-50">
+    <div className="table-row-group">
       <div className="table-row bg-almostwhite bg-opacity-60 bgblur">
         <div className="py-4 px-8 flex flex-col">
           <div className="flex flex-row flex-wrap justify-center items-center content-center align-middle space-x-6 space-y-4 mb-8">
@@ -126,8 +126,8 @@ const Footer = () => {
                   fill="#494b5a"
                 ></path>
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M4.38998 4.50033C4.01476 2.49106 5.55649 0.634766 7.60049 0.634766C9.40427 0.634766 10.8665 2.09701 10.8665 3.90078V7.92728C11.3177 7.89544 11.7761 7.87911 12.2404 7.87911C12.6865 7.87911 13.1272 7.89418 13.5612 7.9236V3.90078C13.5612 2.09701 15.0234 0.634766 16.8272 0.634766C18.8712 0.634766 20.4129 2.49106 20.0377 4.50033L19.1539 9.23326C22.1872 10.5576 24.4809 12.8577 24.4809 15.748V17.4966C24.4809 19.8734 22.9085 21.8634 20.7102 23.2068C18.4948 24.5606 15.4978 25.3654 12.2404 25.3654C8.98304 25.3654 5.98604 24.5606 3.77065 23.2068C1.57242 21.8634 0 19.8734 0 17.4966V15.748C0 12.873 2.2701 10.5817 5.27785 9.25477L4.38998 4.50033ZM18.0212 9.85508L19.0555 4.3169C19.3159 2.92236 18.2459 1.63399 16.8272 1.63399C15.5753 1.63399 14.5604 2.64886 14.5604 3.90078V9.02479C14.2324 8.98273 13.8991 8.9494 13.5612 8.92524C13.128 8.89426 12.6873 8.87833 12.2404 8.87833C11.7753 8.87833 11.3168 8.89559 10.8665 8.92912C10.5286 8.95429 10.1953 8.98862 9.86729 9.03169V3.90078C9.86729 2.64886 8.85241 1.63399 7.60049 1.63399C6.18184 1.63399 5.11179 2.92235 5.37222 4.3169L6.40988 9.87345C3.16599 11.0784 0.999219 13.2586 0.999219 15.748V17.4966C0.999219 21.2906 6.03208 24.3662 12.2404 24.3662C18.4488 24.3662 23.4817 21.2906 23.4817 17.4966V15.748C23.4817 13.2458 21.2927 11.0562 18.0212 9.85508Z"
                   fill="#494b5a"
                 ></path>
@@ -136,8 +136,8 @@ const Footer = () => {
                   fill="#9599B8"
                 ></path>
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M5.37202 4.31671C5.1116 2.92216 6.18164 1.63379 7.6003 1.63379C8.85222 1.63379 9.8671 2.64867 9.8671 3.90059V9.0315C10.6321 8.93102 11.4261 8.87813 12.2402 8.87813C13.0356 8.87813 13.8116 8.9286 14.5602 9.02459V3.90059C14.5602 2.64867 15.5751 1.63379 16.827 1.63379C18.2457 1.63379 19.3157 2.92216 19.0553 4.31671L18.021 9.85488C21.2925 11.056 23.4815 13.2457 23.4815 15.7478C23.4815 19.5418 18.4486 22.6174 12.2402 22.6174C6.03189 22.6174 0.999023 19.5418 0.999023 15.7478C0.999023 13.2584 3.16579 11.0782 6.40968 9.87326L5.37202 4.31671Z"
                   fill="#676A80"
                 ></path>
@@ -160,7 +160,7 @@ const Footer = () => {
               className="flex flex-row flex-nowrap"
             >
               <svg
-                class="w-10 h-8"
+                className="w-10 h-8"
                 viewBox="0 0 55 55"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -186,8 +186,8 @@ const Footer = () => {
                     y2="52.4708"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#7E819C"></stop>
-                    <stop offset="1" stop-color="#65687D"></stop>
+                    <stop stopColor="#7E819C"></stop>
+                    <stop offset="1" stopColor="#65687D"></stop>
                   </linearGradient>
                   <linearGradient
                     id="paint1_linear"
@@ -197,8 +197,8 @@ const Footer = () => {
                     y2="-1.0612e-05"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#494b5a"></stop>
-                    <stop offset="1" stop-color="#65687D"></stop>
+                    <stop stopColor="#494b5a"></stop>
+                    <stop offset="1" stopColor="#65687D"></stop>
                   </linearGradient>
                 </defs>
               </svg>

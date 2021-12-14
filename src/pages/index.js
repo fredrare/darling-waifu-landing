@@ -35,7 +35,7 @@ const Index = ({
         <meta property="og:description" content="Darling Waifu - NFT Game" />
       </Helmet>
       <div className="table-row-group">
-        <div className="table-row">
+        <div className="table-row relative">
           <Background background={background.img} />
           <ContractLinks />
           <Container>
